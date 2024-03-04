@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fan Animation</title>
+    <Link rel="stylesheet" href="./style.css"></Link>
+</head>
+<body>
+    <div class="main">
+        <img id="img" src="./fan.png">
+        <div class="btn">
+            <button onclick="myfunOn()">ON</button>
+            <button onclick="myfunOff()">OFF</button>
+            <button onclick="myfunOne()">1</button>
+            <button onclick="myfunTwo()">2</button>
+            <button onclick="myfunThree()">3</button>
+        </div>
+    </div>
+
+    <script>
+        let a = document.getElementById("img");
+
+        function myfunOn(){
+            a.style.animationDuration = 3+"s";
+        }
+        function myfunOff(){
+            a.style.animationDuration = 0+"s";
+        }
+        function myfunOne(){
+            a.style.animationDuration = 1+"s";
+        }
+        function myfunTwo(){
+            a.style.animationDuration = 0.5+"s";
+        }
+        function myfunThree(){
+            a.style.animationDuration = 0.1+"s";
+        }
+    </script>
+</body>
+</html>
